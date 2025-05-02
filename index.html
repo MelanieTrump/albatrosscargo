@@ -43,9 +43,47 @@
             <p>Телефон: +7 (XXX) XXX-XX-XX</p>
             <p>Email: info@albatrosscargo.com</p>
         </section>
+
+        <section>
+            <h2>Связаться с нами в Telegram</h2>
+            <form id="tg-form">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <p id="form-status"></p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Albatross Cargo. Все права защищены.</p>
     </footer>
+
+    <script>
+        const TOKEN = "8059255191:AAFdzM4JMrTblKZq0e0zylGUPuKLwzwBbVo";
+        const CHAT_ID = "7895116490";
+
+        document.getElementById("tg-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const text = `Новая заявка с сайта:%0AИмя: ${name}%0AТелефон: ${phone}`;
+            const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}`;
+
+            fetch(url).then(response => {
+                if (response.ok) {
+                    document.getElementById("form-status").innerText = "Сообщение отправлено!";
+                    document.getElementById("tg-form").reset();
+                } else {
+                    document.getElementById("form-status").innerText = "Ошибка при отправке.";
+                }
+            }).catch(() => {
+                document.getElementById("form-status").innerText = "Ошибка соединения.";
+            });
+        });
+    </script>
 </body>
 </html>
