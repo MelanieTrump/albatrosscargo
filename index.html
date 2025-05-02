@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Карго-доставка из Китая, Кореи, США и Европы с таможенным оформлением в Домодедово. Быстро, надежно, выгодно.">
-    <meta name="keywords" content="доставка из Китая, доставка из США, доставка из Кореи, доставка из Европы, карго из Китая, карго из США, карго из Кореи, авиаперевозки, грузоперевозки, таможенное оформление Домодедово, сборные грузы, доставка под ключ">
-    <meta name="author" content="Albatross Cargo">
-    <title>Albatross Cargo — Доставка грузов из Китая и других стран</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Карго-доставка из Китая, Кореи, США и Европы с таможенным оформлением в Домодедово. Быстро, надежно, выгодно." />
+  <meta name="keywords" content="доставка из Китая, доставка из США, доставка из Кореи, доставка из Европы, карго, авиаперевозки, таможенное оформление, доставка под ключ" />
+  <meta name="author" content="Albatross Cargo" />
+  <title>Albatross Cargo — Доставка грузов из Китая и других стран</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="лого_прозрачное.jpg" alt="Albatross Cargo Logo" class="logo">
-        <h1>Доставка грузов из Китая и других стран</h1>
-        <p>Авиаперевозки, карго, таможенное оформление — всё под ключ</p>
-    </header>
-    <main>
-        <section>
-            <h2>Услуги</h2>
-            <ul>
-                <li>Карго-доставка из Китая, Кореи, США, Европы</li>
-                <li>Авиа, море, автотранспорт</li>
-                <li>Таможенное оформление в Домодедово</li>
-                <li>Сборные грузы, доставка под ключ</li>
-            </ul>
-        </section>
-        <section>
-            <h2>География</h2>
-            <p>Работаем с Пекином, Шанхаем, Гуанчжоу, Сеулом, Лос-Анджелесом, Франкфуртом, Стамбулом и другими крупными логистическими центрами.</p>
-        </section>
-        <section>
-            <h2>Почему мы</h2>
-            <ul>
-                <li>Прозрачные тарифы и сроки</li>
-                <li>Более 10 лет в логистике</li>
-                <li>Поддержка 24/7</li>
-                <li>Собственный брокер в Домодедово</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Контакты</h2>
-            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-            <p>Email: info@albatrosscargo.com</p>
-        </section>
-        <section>
-            <h2>Связаться с нами в Telegram</h2>
-            <form id="tg-form">
-                <label for="name">Имя:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+  <nav class="main-menu">
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li>
+        <a href="#">Услуги</a>
+        <ul class="submenu">
+          <li><a href="#">Авиаперевозки</a></li>
+          <li><a href="#">Морские</a></li>
+          <li><a href="#">Авто и ЖД</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">География</a>
+        <ul class="submenu">
+          <li><a href="#">Китай</a></li>
+          <li><a href="#">США</a></li>
+          <li><a href="#">Турция</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
 
-                <label for="phone">Телефон:</label><br>
-                <input type="tel" id="phone" name="phone" required><br><br>
+  <header>
+    <h1>Доставка грузов из Китая и других стран</h1>
+    <p>Авиаперевозки, карго, таможенное оформление — всё под ключ</p>
+  </header>
 
-                <button type="submit">Отправить</button>
-            </form>
-            <p id="form-status"></p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Albatross Cargo. Все права защищены.</p>
-    </footer>
+  <main>
+    <section class="quote-form">
+      <h2>Получить расчет</h2>
+      <form id="step1">
+        <label>Откуда:</label>
+        <select id="from">
+          <option>Китай</option>
+          <option>США</option>
+          <option>Турция</option>
+        </select>
+        <label>Куда:</label>
+        <select id="to">
+          <option>Россия</option>
+          <option>Казахстан</option>
+          <option>Беларусь</option>
+        </select>
+        <button type="button" onclick="showStep2()">Далее</button>
+      </form>
 
-    <script>
-        const TOKEN = "8059255191:AAFdzM4JMrTblKZq0e0zylGUPuKLwzwBbVo";
-        const CHAT_ID = "7895116490";
+      <form id="step2" style="display:none;">
+        <label>Наименование груза:</label>
+        <input type="text" id="cargo" required />
+        <label>Вес (кг):</label>
+        <input type="text" id="weight" required />
+        <label>Объем / Размеры:</label>
+        <input type="text" id="volume" required />
+        <label>Имя:</label>
+        <input type="text" id="name" required />
+        <label>Телефон:</label>
+        <input type="text" id="phone" required />
+        <label>Email:</label>
+        <input type="email" id="email" required />
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="status"></p>
+    </section>
 
-        document.getElementById("tg-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            const name = document.getElementById("name").value;
-            const phone = document.getElementById("phone").value;
-            const text = `Новая заявка с сайта:%0AИмя: ${name}%0AТелефон: ${phone}`;
-            const url = `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}`;
+    <section>
+      <h2>Услуги</h2>
+      <ul>
+        <li>Карго-доставка из Китая, Кореи, США, Европы</li>
+        <li>Авиа, море, автотранспорт</li>
+        <li>Таможенное оформление в Домодедово</li>
+        <li>Сборные грузы, доставка под ключ</li>
+      </ul>
+    </section>
 
-            fetch(url).then(response => {
-                if (response.ok) {
-                    document.getElementById("form-status").innerText = "Сообщение отправлено!";
-                    document.getElementById("tg-form").reset();
-                } else {
-                    document.getElementById("form-status").innerText = "Ошибка при отправке.";
-                }
-            }).catch(() => {
-                document.getElementById("form-status").innerText = "Ошибка соединения.";
-            });
-        });
-    </script>
+    <section>
+      <h2>География</h2>
+      <p>Работаем с Пекином, Шанхаем, Гуанчжоу, Сеулом, Лос-Анджелесом, Франкфуртом, Стамбулом и другими крупными логистическими центрами.</p>
+    </section>
+
+    <section>
+      <h2>Почему мы</h2>
+      <ul>
+        <li>Прозрачные тарифы и сроки</li>
+        <li>Более 10 лет в логистике</li>
+        <li>Поддержка 24/7</li>
+        <li>Собственный брокер в Домодедово</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Связаться с нами в Telegram</h2>
+      <form id="tg-form">
+        <label for="name2">Имя:</label><br>
+        <input type="text" id="name2" name="name2" required><br><br>
+        <label for="phone2">Телефон:</label><br>
+        <input type="tel" id="phone2" name="phone2" required><br><br>
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Albatross Cargo. Все права защищены.</p>
+  </footer>
+
+  <script src="form.js"></script>
 </body>
 </html>
