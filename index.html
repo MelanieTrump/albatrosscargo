@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Карго-доставка из Китая, Кореи, США и Европы с таможенным оформлением в Домодедово. Быстро, надежно, выгодно." />
-  <meta name="keywords" content="доставка из Китая, доставка из США, доставка из Кореи, доставка из Европы, карго, авиаперевозки, таможенное оформление, доставка под ключ" />
-  <meta name="author" content="Albatross Cargo" />
-  <title>Albatross Cargo — Доставка грузов из Китая и других стран</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albatross Cargo</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <nav class="main-menu">
-    <ul>
-      <li><a href="#">Главная</a></li>
-      <li>
-        <a href="#">Услуги</a>
-        <ul class="submenu">
-          <li><a href="#">Авиаперевозки</a></li>
-          <li><a href="#">Морские</a></li>
-          <li><a href="#">Авто и ЖД</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">География</a>
-        <ul class="submenu">
-          <li><a href="countries/china.html">Китай</a></li>
-          <li><a href="countries/pakistan.html">Пакистан</a></li>
-          <li><a href="#">США</a></li>
-          <li><a href="#">Турция</a></li>
-        </ul>
-      </li>
-      <li><a href="blog/index.html">Блог</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h1>Доставка грузов из Китая и других стран</h1>
-    <p>Авиаперевозки, карго, таможенное оформление — всё под ключ</p>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="/">Главная</a></li>
+
+        <li class="has-submenu">
+          <a href="#">Международные перевозки</a>
+          <ul class="submenu">
+            <li><a href="/sea">Морские перевозки</a></li>
+            <li><a href="/air">Авиаперевозки</a></li>
+            <li><a href="/auto">Автоперевозки</a></li>
+            <li><a href="/rail">Ж/Д перевозки</a></li>
+            <li><a href="/multimodal">Мультимодальные</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#">Услуги</a>
+          <ul class="submenu">
+            <li class="has-submenu">
+              <a href="#">Перевозка грузов</a>
+              <ul class="submenu">
+                <li><a href="/services/sbornye">Сборные грузы</a></li>
+                <li><a href="/services/negabarit">Негабаритные грузы</a></li>
+                <li><a href="/services/generalnye">Генеральные грузы</a></li>
+                <li><a href="/services/konteinernye">Контейнерные перевозки</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Таможенное оформление</a>
+              <ul class="submenu">
+                <li><a href="/customs/domodedovo">Домодедово</a></li>
+                <li><a href="/customs/vnukovo">Внуково</a></li>
+                <li><a href="/customs/sheremetyevo">Шереметьево</a></li>
+                <li><a href="/customs/stoimost">Расчет таможенной стоимости</a></li>
+              </ul>
+            </li>
+            <li><a href="/services/personal/europe">Личные вещи из Европы</a></li>
+            <li><a href="/services/personal/china">Личные вещи в Китай</a></li>
+            <li><a href="/services/ved">Услуги ВЭД</a></li>
+            <li><a href="/services/class">Класс-решение ФТС</a></li>
+            <li><a href="/services/insurance">Страхование</a></li>
+            <li><a href="/services/forwarding">Экспедирование</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#">Страны перевозок</a>
+          <ul class="submenu">
+            <li><a href="/countries/europe">Европа</a></li>
+            <li><a href="/countries/asia">Азия</a></li>
+            <li><a href="/countries/america">Америка</a></li>
+            <li><a href="/countries/africa">Африка</a></li>
+            <li><a href="/countries/australia">Австралия</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#">Перевозки из Китая</a>
+          <ul class="submenu">
+            <li><a href="/china/auto">Авто</a></li>
+            <li><a href="/china/rail">Ж/Д</a></li>
+            <li><a href="/china/oversize">Крупногабарит</a></li>
+            <li><a href="/china/cheap">Недорогие</a></li>
+            <li><a href="/china/dangerous">Опасные</a></li>
+            <li><a href="/china/consolidated">Сборные</a></li>
+            <li><a href="/china/air">Авиа</a></li>
+            <li><a href="/china/moscow">В Москву</a></li>
+            <li><a href="/china/sea">Морем</a></li>
+            <li><a href="/china/international">Международные</a></li>
+            <li><a href="/china/container">Контейнерные</a></li>
+            <li><a href="/china/personal">Личные вещи</a></li>
+            <li class="has-submenu">
+              <a href="#">Электронные площадки</a>
+              <ul class="submenu">
+                <li><a href="/china/alibaba">Alibaba</a></li>
+                <li><a href="/china/taobao">Taobao</a></li>
+                <li><a href="/china/aliexpress">Aliexpress</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Доп.услуги</a>
+              <ul class="submenu">
+                <li><a href="/china/customs">Таможенное оформление</a></li>
+                <li><a href="/china/warehouse">Складские услуги</a></li>
+                <li><a href="/china/certification">Сертификация</a></li>
+                <li><a href="/china/transit">Таможенный транзит</a></li>
+              </ul>
+            </li>
+            <li class="has-submenu">
+              <a href="#">Доставка товаров</a>
+              <ul class="submenu">
+                <li><a href="/china/products/tech">Бытовая техника</a></li>
+                <li><a href="/china/products/toys">Игрушки</a></li>
+                <li><a href="/china/products/furniture">Мебель</a></li>
+                <li><a href="/china/products/phones">Телефоны</a></li>
+                <li><a href="/china/products/shoes">Обувь</a></li>
+                <li><a href="/china/products/clothes">Одежда</a></li>
+                <li><a href="/china/products/dishes">Посуды</a></li>
+                <li><a href="/china/products/fabrics">Ткани</a></li>
+                <li><a href="/china/products/other">Другие товары</a></li>
+                <li><a href="/china/products/miners">Майнеры</a></li>
+              </ul>
+            </li>
+            <li><a href="/china/express">Экспресс-доставка</a></li>
+            <li><a href="/china/cargo">Доставка карго</a></li>
+            <li><a href="/china/masks">Маски, респираторы</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#">Информация</a>
+          <ul class="submenu">
+            <li><a href="/info/containers">Размеры контейнеров</a></li>
+            <li><a href="/info/useful">Полезная информация</a></li>
+            <li><a href="/info/news">Новости и акции</a></li>
+            <li><a href="/info/incoterms">Инкотермс 2000</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#">О компании</a>
+          <ul class="submenu">
+            <li><a href="/about/jobs">Вакансии</a></li>
+            <li><a href="/about/reviews">Отзывы</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/calculate">Получить расчет</a></li>
+        <li><a href="/contacts">Контакты</a></li>
+
+        <li class="has-submenu">
+          <a href="#">Блог</a>
+          <ul class="submenu">
+            <li><a href="/blog/cargo-price">Что влияет на стоимость карго</a></li>
+            <li><a href="/blog/customs-step">Таможенное оформление — пошагово</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
   </header>
-
-  <main>
-    <section class="quote-form">
-      <h2>Получить расчет</h2>
-      <form id="step1">
-        <label>Откуда:</label>
-        <select id="from">
-          <option>Китай</option>
-          <option>США</option>
-          <option>Турция</option>
-        </select>
-        <label>Куда:</label>
-        <select id="to">
-          <option>Россия</option>
-          <option>Казахстан</option>
-          <option>Беларусь</option>
-        </select>
-        <button type="button" onclick="showStep2()">Далее</button>
-      </form>
-
-      <form id="step2" style="display:none;">
-        <label>Наименование груза:</label>
-        <input type="text" id="cargo" required />
-        <label>Вес (кг):</label>
-        <input type="text" id="weight" required />
-        <label>Объем / Размеры:</label>
-        <input type="text" id="volume" required />
-        <label>Имя:</label>
-        <input type="text" id="name" required />
-        <label>Телефон:</label>
-        <input type="text" id="phone" required />
-        <label>Email:</label>
-        <input type="email" id="email" required />
-        <button type="submit">Отправить</button>
-      </form>
-      <p id="status"></p>
-    </section>
-
-    <section>
-      <h2>Услуги</h2>
-      <ul>
-        <li>Карго-доставка из Китая, Кореи, США, Европы</li>
-        <li>Авиа, море, автотранспорт</li>
-        <li>Таможенное оформление в Домодедово</li>
-        <li>Сборные грузы, доставка под ключ</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>География</h2>
-      <p>Работаем с Пекином, Шанхаем, Гуанчжоу, Сеулом, Лос-Анджелесом, Франкфуртом, Стамбулом и другими крупными логистическими центрами.</p>
-    </section>
-
-    <section>
-      <h2>Почему мы</h2>
-      <ul>
-        <li>Прозрачные тарифы и сроки</li>
-        <li>Более 10 лет в логистике</li>
-        <li>Поддержка 24/7</li>
-        <li>Собственный брокер в Домодедово</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Связаться с нами в Telegram</h2>
-      <form id="tg-form">
-        <label for="name2">Имя:</label><br>
-        <input type="text" id="name2" name="name2" required><br><br>
-        <label for="phone2">Телефон:</label><br>
-        <input type="tel" id="phone2" name="phone2" required><br><br>
-        <label for="message">Сообщение:</label><br>
-        <textarea id="message" name="message" required></textarea><br><br>
-        <button type="submit">Отправить</button>
-      </form>
-      <p id="form-status"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Albatross Cargo. Все права защищены.</p>
-  </footer>
-
-  <script src="form.js"></script>
 </body>
 </html>
