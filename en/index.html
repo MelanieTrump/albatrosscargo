@@ -1,18 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Albatross Cargo — International Logistics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Международные грузоперевозки — морские, авиа, авто и Ж/Д. Перевозки из Китая, Европы, США, Азии. Таможенное оформление, страхование и ВЭД сопровождение.">
+  <meta name="keywords" content="грузоперевозки, доставка из Китая, международная логистика, карго, контейнерные перевозки, таможенное оформление, морские перевозки, авиаперевозки, сборные грузы, ВЭД">
+  <meta name="author" content="Albatross Cargo">
+  <title>Albatross Cargo — Международные грузоперевозки</title>
   <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #264653;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      position: relative;
+      background: #264653;
+    }
+    nav ul li a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    nav ul li:hover > a {
+      background: #2a9d8f;
+    }
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #2a9d8f;
+      min-width: 200px;
+      z-index: 999;
+    }
+    nav ul li:hover > ul {
+      display: block;
+    }
+    nav ul li ul li {
+      position: relative;
+    }
+    nav ul li ul li ul {
+      left: 100%;
+      top: 0;
+    }
+  </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="/ru/">Русская версия</a></li>
+      <li><a href="/ru/">Главная</a></li>
+      <li><a href="#">Международные перевозки</a>
+        <ul>
+          <li><a href="/ru/services/morskie.html">Морские перевозки</a></li>
+          <li><a href="/ru/services/aviaperevozki.html">Авиаперевозки</a></li>
+          <li><a href="/ru/services/avto.html">Автоперевозки</a></li>
+          <li><a href="/ru/services/zhd.html">Ж/Д перевозки</a></li>
+          <li><a href="/ru/services/multimodal.html">Мультимодальные</a></li>
+        </ul>
+      </li>
+      <li><a href="/ru/services/">Услуги</a>
+        <ul>
+          <li><a href="#">Перевозка грузов</a></li>
+          <li><a href="#">Сборные грузы</a></li>
+          <li><a href="#">Негабаритные грузы</a></li>
+          <li><a href="#">Генеральные грузы</a></li>
+          <li><a href="#">Контейнерные перевозки</a></li>
+          <li><a href="#">Таможенное оформление</a>
+            <ul>
+              <li><a href="#">в Домодедово</a></li>
+              <li><a href="#">во Внуково</a></li>
+              <li><a href="#">в Шереметьево</a></li>
+              <li><a href="#">Расчет таможенной стоимости</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Перевозка личных вещей из Европы в Россию</a></li>
+          <li><a href="#">Перевозка личных вещей в Китай</a></li>
+          <li><a href="#">Услуги ВЭД</a></li>
+          <li><a href="#">Класс-решение ФТС</a></li>
+          <li><a href="#">Страхование</a></li>
+          <li><a href="#">Экспедирование</a></li>
+        </ul>
+      </li>
+      <li><a href="/ru/countries/">Страны перевозок</a>...</li>
+      <li><a href="/ru/china/">Перевозки из Китая</a>...</li>
+      <li><a href="/ru/info/">Информация</a>
+        <ul>
+          <li><a href="/ru/info/containers.html">Размеры контейнеров</a></li>
+          <li><a href="/ru/info/helpful.html">Полезное</a></li>
+        </ul>
+      </li>
+      <li><a href="/calculator/">Получить расчет</a></li>
+      <li><a href="/ru/about/">О компании</a></li>
+      <li><a href="/ru/blog/">Блог</a></li>
+      <li><a href="/en/">English</a></li>
     </ul>
   </nav>
-
-  <h1>Albatross Cargo</h1>
-  <p>International freight forwarding, customs clearance, delivery of goods worldwide</p>
 </body>
 </html>
